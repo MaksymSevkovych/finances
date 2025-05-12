@@ -1,13 +1,10 @@
-[project]
-dynamic = ["dependencies", "version"]
-
 [tool.poetry]
+name = "finances"
+version = "0.0.0"
+description = "track my finances"
 authors = [
   "Maksym Sevkovych <m.sevkovych@web.de>",
 ]
-description = "track my finances"
-name = "finances"
-version = "0.0.0"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.12"
@@ -16,7 +13,6 @@ pip = "^24.2"
 pyyaml = "^6.0.2"
 ipykernel = "^6.29.5"
 
-
 [build-system]
-build-backend = "poetry_dynamic_versioning.backend"
-requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning", "wheel"]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
